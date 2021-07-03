@@ -5,6 +5,7 @@
 body {
     background-color: #242323;
     color: var(--body-font-color);
+    font-family: Helvetica;
 }
 
 a {
