@@ -1,0 +1,80 @@
+:root {
+    --body-font-color: rgb(255, 255, 255);
+}
+
+body {
+    background-color: #242323;
+    color: var(--body-font-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+#navbar a {
+    color: var(--body-font-color);
+    opacity: .5;
+}
+
+a:hover {
+    transition: 0.5s;
+}
+
+#navbar a:hover {
+    color: rgb(255, 255, 255);
+    opacity: 1;
+}
+
+#tribute-info {
+    text-align: justify;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#tribute-info a {
+    color:rgb(255, 255, 255);
+}
+
+#tribute-info a:hover {
+    color: rgb(195, 141, 248);
+}
+
+#timeline-table {
+    border-spacing: 1.5em;
+}
+
+.date {
+    text-align: right;
+    white-space: nowrap;
+    padding-right: 1em;
+}
+
+#timeline-table a {
+    font-weight: bold;
+}
+
+#socials {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1em;
+}
+
+#socials i {
+    font-size: 2.5em;
+}
+
+#socials i:hover {
+    font-size: 2.7em;
+}
+
+.fa-youtube-play {
+    color: #FF0000;
+}
+
+.fa-twitter {
+    color: #1DA1F2;
+}
+
+.fa-twitch {
+    color: #6441a5;
+}
