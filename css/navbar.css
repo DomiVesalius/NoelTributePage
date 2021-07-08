@@ -1,23 +1,53 @@
+@media(max-width: 486px) {
+    nav {
+        justify-content: center;
+    }
+}
 
-#navbar {
+:root {
+    --nav-color:  linear-gradient(to left top, #222225, #202325, #1f2324, #202322, #222320);
+    --nav-text-color: rgba(243, 241, 242, 1);
+    --nav-transition-color: rgba(243, 241, 242, 0.25);
+}
+
+nav {
+    background: var(--nav-color);
     display: flex;
-    background-color: #131313;
-    border-bottom: solid rgb(255, 255, 255);
-    width: 100%;
-    font-size: 1.36em;
     position: fixed;
-    top: 0; left: 0; right: 0;
+    font-size: larger;
+    width: 100%; height: 50px;
+    left: 0; top: 0;
+    align-items: center;
+    border-bottom: solid white;
 }
 
-#navbar-list {
-    list-style-type: none;
-}
-
-#navbar-list li {
+nav a {
     display: inline-block;
-    margin-inline: 0.4em;
+    text-decoration: none;
+    color: var(--nav-text-color);
+    margin-inline: 2vw;
+    position: relative;
 }
 
-html {
-    scroll-behavior: smooth;
+nav a:hover {
+    animation-name: underline;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes underline {
+    0% {
+        text-decoration: underline;
+        text-decoration-color: var(--nav-color);
+    }
+
+    50% {
+        text-decoration: underline;
+        text-decoration-color: var(--nav-transition-color);
+    }
+    
+    100% {
+        text-decoration: underline;
+        text-decoration-color: var(--nav-text-color);
+    }
 }
